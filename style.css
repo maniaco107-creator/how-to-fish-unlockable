@@ -5,7 +5,7 @@
 body {
     background-color: #4ac3ff;
     font-family: 'Trebuchet MS', sans-serif;
-    color: rgb(7, 7, 7);
+    color: rgb(253, 252, 252);
     margin: 0;
     padding: 0;
 
@@ -249,4 +249,18 @@ li {
     display: flex;
     gap: 20px;
     margin-top: 25px;
+}
+
+.fish-page {
+    background-color: #c7e6ff; /* bleu pastel */
+    color: #1f2f40; /* texte foncé */
+    padding: 20px;
+    display: block; /* IMPORTANT : enlève le centrage du homepage */
+}
+
+.skin-page {
+    background-color: #c7e6ff; /* bleu pastel */
+    color: #1f2f40; /* texte foncé */
+    padding: 20px;
+    display: block; /* IMPORTANT : enlève le centrage du homepage */
 }
