@@ -228,3 +228,20 @@ li {
     font-size: 18px;
     color: #1f2f40;
 }
+.credits {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.credits a {
+    color: #ffd34a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.credits a:hover {
+    text-decoration: underline;
+}
