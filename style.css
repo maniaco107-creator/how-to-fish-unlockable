@@ -1,12 +1,104 @@
+/* --------------------------------------------------
+   GLOBAL (appliqué à toutes les pages)
+-------------------------------------------------- */
+
 body {
-    font-family: Arial, sans-serif;
-    background: #c7e6ff; /* pastel ocean blue */
-    color: #1f2f40;
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
+    background-color: #4ac3ff;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+    /* Centrage global */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
+/* Bouton jaune */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 30px;
+    background: #ffd34a;
+    color: black;
+    font-size: 22px;
+    font-weight: 900;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #ffea7a;
+    transform: scale(1.05);
+}
+
+/* --------------------------------------------------
+   HOMEPAGE (index.html)
+-------------------------------------------------- */
+
+/* Bannière */
+.banner {
+    display: block;
+    margin: 20px auto;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
+}
+
+/* Roadmap */
+.roadmap {
+    background: rgba(255,255,255,0.15);
+    width: 80%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+    margin: 30px auto;
+    text-align: center;
+}
+
+.roadmap h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+}
+
+.roadmap ul {
+    list-style: none;
+    padding: 0;
+    font-size: 22px;
+    margin: 0;
+}
+
+.roadmap li {
+    margin: 12px 0;
+}
+
+.htf-text {
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+}
+
+/* --------------------------------------------------
+   SKIN VIEWER (skin.html)
+-------------------------------------------------- */
+
+/* Conteneur principal */
+.page-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Titres */
 h1 {
     text-align: center;
     margin-bottom: 10px;
@@ -19,11 +111,12 @@ h1 {
     color: #2f4f6b;
 }
 
+/* Zone de drop */
 #dropzone {
-    border: 3px dashed #6fb7ff; /* ocean pastel blue */
+    border: 3px dashed #6fb7ff;
     padding: 40px;
     text-align: center;
-    background: #e3f2ff; /* lighter polygon‑blue */
+    background: #e3f2ff;
     border-radius: 12px;
     margin-bottom: 30px;
     transition: 0.2s;
@@ -31,128 +124,17 @@ h1 {
 }
 
 #dropzone:hover {
-    background: #b4d9ff; /* closer to your screenshot */
+    background: #b4d9ff;
 }
 
+/* Catégories */
 .category {
     background: #ffffff;
     padding: 20px;
     margin: 15px 0;
     border-radius: 12px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.12);
-    border-left: 6px solid #6fb7ff; /* ocean pastel accent */
-}
-
-.category h2 {
-    margin-top: 0;
-    color: #16324f;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-li {
-    background: #f0f7ff; /* soft water‑blue */
-    padding: 10px;
-    margin: 6px 0;
-    border-radius: 8px;
-    border: 1px solid #8cc6ff; /* pastel water border */
-    color: #1f2f40;
-}
-.skin-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skin-grid .skin {
-    width: 140px;
-    text-align: center;
-}
-
-.skin-grid img {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    border-radius: 10px;
-    background: white;
-    padding: 8px;
-    border: 1px solid #8cc6ff;
-    filter: grayscale(100%);
-    opacity: 0.6;
-    transition: 0.3s;
-}
-
-.skin-grid img.unlocked {
-    filter: none;
-    opacity: 1;
-}
-
-.skin-name {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #1f2f40;
-}
-
-.skin-name.common {
-    color: #777; /* grey */
-}
-
-.skin-name.rare {
-    color: #c62828; /* red */
-}
-
-.skin-name.legendary {
-    color: #f4c542; /* gold/yellow */
-}
-.rarity-title {
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-size: 18px;
-    color: #1f2f40;
-}
-
-.skin-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skin-grid .skin {
-    width: 140px;
-    text-align: center;
-}
-
-.skin-grid img {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    border-radius: 10px;
-    background: white;
-    padding: 8px;
-    border: 1px solid #8cc6ff;
-    filter: grayscale(100%);
-    opacity: 0.6;
-    transition: 0.3s;
-}
-
-.skin-grid img.unlocked {
-    filter: none;
-    opacity: 1;
-}
-
-.skin-name.common {
-    color: #777;
-}
-
-.skin-name.rare {
-    color: #c62828;
-}
-
-.skin-name.legendary {
-    color: #f4c542;
+    border-left: 6px solid #6fb7ff;
 }
 
 .category-title {
@@ -175,117 +157,74 @@ li {
     display: none;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 15px 30px;
-    background: #ffd34a;
-    color: black;
-    font-size: 22px;
-    font-weight: 900;
-    border-radius: 12px;
-    text-decoration: none;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
-    transition: 0.2s;
+/* Liste interne */
+ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-.btn:hover {
-    background: #ffea7a;
-    transform: scale(1.05);
+li {
+    background: #f0f7ff;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 8px;
+    border: 1px solid #8cc6ff;
+    color: #1f2f40;
 }
 
-body {
-    background-color: #4ac3ff;
-    font-family: 'Trebuchet MS', sans-serif;
-    color: white;
-    margin: 0;
-    padding: 0;
-
+/* Grille des skins */
+.skin-grid {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skin-grid .skin {
+    width: 140px;
     text-align: center;
 }
 
-
-   body {
-    background-color: #4ac3ff;
-    font-family: 'Trebuchet MS', sans-serif;
-    color: white;
-    margin: 0;
-    padding: 0;
-
-    /* Centrage global */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+/* Images des skins */
+.skin-grid img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: white;
+    padding: 8px;
+    border: 1px solid #8cc6ff;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: 0.3s;
 }
 
-/* Bannière centrée */
-.banner {
-    display: block;
-    margin: 20px auto;
-
-    border-radius: 12px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
+.skin-grid img.unlocked {
+    filter: none;
+    opacity: 1;
 }
 
+/* Noms des skins */
+.skin-name {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #1f2f40;
+}
 
-    .roadmap {
-        background: rgba(255,255,255,0.15);
-        width: 80%;
-        max-width: 700px;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+.skin-name.common {
+    color: #777;
+}
 
-        /* Centrer le contenu interne */
-        margin: 30px auto;
-        text-align: center;
-    }
+.skin-name.rare {
+    color: #c62828;
+}
 
+.skin-name.legendary {
+    color: #f4c542;
+}
 
-    .roadmap h2 {
-        font-size: 32px;
-        margin-bottom: 10px;
-        font-weight: 900;
-        letter-spacing: 2px;
-        text-shadow: 0px 0px 6px rgba(0,0,0,0.3);
-    }
-
-    .roadmap ul {
-        list-style: none;
-        padding: 0;
-        font-size: 22px;
-        margin: 0;
-    }
-
-    .roadmap li {
-        margin: 12px 0;
-    }
-
-    .htf-text {
-        font-weight: 900;
-        letter-spacing: 1px;
-        text-shadow: 0px 0px 4px rgba(0,0,0,0.3);
-    }
-
-    .btn {
-        display: inline-block;
-        margin-top: 25px;
-        padding: 15px 30px;
-        background: #ffd34a;
-        color: black;
-        font-size: 22px;
-        font-weight: 900;
-        border-radius: 12px;
-        text-decoration: none;
-        box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
-        transition: 0.2s;
-    }
-
-    .btn:hover {
-        background: #ffea7a;
-        transform: scale(1.05);
-    }
+.rarity-title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #1f2f40;
+}
