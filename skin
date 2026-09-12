@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unlocked Skins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Unlocked Skins</h1>
+<p class="subtitle">Drag & drop your <strong>save.json</strong> file below.</p>
+
+<div id="dropzone">Drop your save file here</div>
+
+<p id="tutorial">
+    To find your save file, go to:<br>
+    <strong>C:\Users\&lt;YourComputerName&gt;\AppData\LocalLow\Dazed Games\How to Fish\Saves\</strong>
+</p>
+
+
+<div id="skins-container">
+
+<div class="category" data-id="57">
+<h2 class="category-title">
+    Brass Knuckles Skins
+    <span class="toggle-arrow">▼</span>
+</h2>
+
+
+    <h3 class="rarity-title">Common</h3>
+    <div class="skin-grid" id="knuckles-common"></div>
+
+    <h3 class="rarity-title">Rare</h3>
+    <div class="skin-grid" id="knuckles-rare"></div>
+
+    <h3 class="rarity-title">Legendary</h3>
+    <div class="skin-grid" id="knuckles-legendary"></div>
+</div>
+
+
+
+
+<div class="category" data-id="63">
+<h2 class="category-title">
+    Knifes Skins
+    <span class="toggle-arrow">▼</span>
+</h2>
+
+    <h3 class="rarity-title">Common</h3>
+    <div class="skin-grid" id="knifes-common"></div>
+
+    <h3 class="rarity-title">Rare</h3>
+    <div class="skin-grid" id="knifes-rare"></div>
+
+    <h3 class="rarity-title">Legendary</h3>
+    <div class="skin-grid" id="knifes-legendary"></div>
+</div>
+
+
+<div class="category" data-id="boats">
+    <h2 class="category-title">
+    Boats Skins
+    <span class="toggle-arrow">▼</span>
+</h2>
+
+    <h3 class="rarity-title">Common</h3>
+    <div class="skin-grid" id="boats-common"></div>
+
+    <h3 class="rarity-title">Rare</h3>
+    <div class="skin-grid" id="boats-rare"></div>
+
+    <h3 class="rarity-title">Legendary</h3>
+    <div class="skin-grid" id="boats-legendary"></div>
+</div>
+
+    <div class="category" data-id="61">
+        <h2 class="category-title">
+    Fishing Rods Skins
+    <span class="toggle-arrow">▼</span>
+</h2>
+
+    <h3 class="rarity-title">Common</h3>
+    <div class="skin-grid" id="rods-common"></div>
+
+    <h3 class="rarity-title">Rare</h3>
+    <div class="skin-grid" id="rods-rare"></div>
+
+    <h3 class="rarity-title">Legendary</h3>
+    <div class="skin-grid" id="rods-legendary"></div>
+</div>
+
+    <div class="category" data-id="66">
+        <h2 class="category-title">
+    Pistols Skins
+    <span class="toggle-arrow">▼</span>
+</h2>
+
+    <h3 class="rarity-title">Common</h3>
+    <div class="skin-grid" id="pistols-common"></div>
+
+    <h3 class="rarity-title">Rare</h3>
+    <div class="skin-grid" id="pistols-rare"></div>
+
+    <h3 class="rarity-title">Legendary</h3>
+    <div class="skin-grid" id="pistols-legendary"></div>
+</div>
+
+    <div class="category" data-id="68">
+        <h2 class="category-title">
+    Shotguns Skins
+    <span class="toggle-arrow">▼</span>
+</h2>
+
+    <h3 class="rarity-title">Common</h3>
+    <div class="skin-grid" id="shots-common"></div>
+
+    <h3 class="rarity-title">Rare</h3>
+    <div class="skin-grid" id="shots-rare"></div>
+
+    <h3 class="rarity-title">Legendary</h3>
+    <div class="skin-grid" id="shots-legendary"></div>
+</div>
+
+    <div class="category" data-id="69">
+        <h2 class="category-title">
+    Smgs Skins
+    <span class="toggle-arrow">▼</span>
+</h2>
+
+    <h3 class="rarity-title">Common</h3>
+    <div class="skin-grid" id="smgs-common"></div>
+
+    <h3 class="rarity-title">Rare</h3>
+    <div class="skin-grid" id="smgs-rare"></div>
+
+    <h3 class="rarity-title">Legendary</h3>
+    <div class="skin-grid" id="smgs-legendary"></div>
+</div>
+
+    <div class="category" data-id="70">
+        <h2 class="category-title">
+    Snipers Skins
+    <span class="toggle-arrow">▼</span>
+</h2>
+
+    <h3 class="rarity-title">Common</h3>
+    <div class="skin-grid" id="snipers-common"></div>
+
+    <h3 class="rarity-title">Rare</h3>
+    <div class="skin-grid" id="snipers-rare"></div>
+
+    <h3 class="rarity-title">Legendary</h3>
+    <div class="skin-grid" id="snipers-legendary"></div>
+</div>
+
+    <div class="category" data-id="54">
+        <h2 class="category-title">
+    Assault Rifles Skins
+    <span class="toggle-arrow">▼</span>
+</h2>
+
+    <h3 class="rarity-title">Common</h3>
+    <div class="skin-grid" id="assaults-common"></div>
+
+    <h3 class="rarity-title">Rare</h3>
+    <div class="skin-grid" id="assaults-rare"></div>
+
+    <h3 class="rarity-title">Legendary</h3>
+    <div class="skin-grid" id="assaults-legendary"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
