@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How To Fish — Fish List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <h1>Fish List</h1>
+    <p class="subtitle">Drop your <strong>save.json</strong> file below to reveal the fish you've caught.</p>
+
+    <!-- Zone de drop -->
+    <div id="dropzone">Drop your save file here</div>
+
+    <!-- Catégories -->
+    <div id="fish-container">
+
+        <!-- Exemple de catégorie -->
+        <div class="category" data-category="Crab-Fishing Rod (No bait)">
+            <div class="category-title">
+                <h2>Crab-Fishing Rod (No bait)</h2>
+                <span class="toggle-arrow">▶</span>
+            </div>
+
+            <div class="skin-grid" id="cat-crab">
+                <!-- Les poissons seront ajoutés ici par JS -->
+            </div>
+        </div>
+
+        <!-- Les autres catégories seront générées automatiquement -->
+    </div>
+
+    <a href="index.html" class="btn">Back to Home</a>
+
+</div>
+
+<script src="fish.js"></script>
+
+</body>
+</html>

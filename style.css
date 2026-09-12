@@ -245,3 +245,8 @@ li {
 .credits a:hover {
     text-decoration: underline;
 }
+.button-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
