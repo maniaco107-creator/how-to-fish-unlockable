@@ -274,8 +274,3 @@ body {
     background: #ffea7a;
     transform: scale(1.05);
 }
-.page-wrapper {
-    width: 100%;
-    max-width: 900px; /* Ajuste ici si tu veux plus ou moins large */
-    margin: 0 auto;   /* Centre le conteneur */
-}
