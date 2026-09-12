@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #c7e6ff; /* pastel ocean blue */
+    color: #1f2f40;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #16324f;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2f4f6b;
+}
+
+#dropzone {
+    border: 3px dashed #6fb7ff; /* ocean pastel blue */
+    padding: 40px;
+    text-align: center;
+    background: #e3f2ff; /* lighter polygon‑blue */
+    border-radius: 12px;
+    margin-bottom: 30px;
+    transition: 0.2s;
+    color: #1f2f40;
+}
+
+#dropzone:hover {
+    background: #b4d9ff; /* closer to your screenshot */
+}
+
+.category {
+    background: #ffffff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    border-left: 6px solid #6fb7ff; /* ocean pastel accent */
+}
+
+.category h2 {
+    margin-top: 0;
+    color: #16324f;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    background: #f0f7ff; /* soft water‑blue */
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 8px;
+    border: 1px solid #8cc6ff; /* pastel water border */
+    color: #1f2f40;
+}
+.skin-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skin-grid .skin {
+    width: 140px;
+    text-align: center;
+}
+
+.skin-grid img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: white;
+    padding: 8px;
+    border: 1px solid #8cc6ff;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.skin-grid img.unlocked {
+    filter: none;
+    opacity: 1;
+}
+
+.skin-name {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #1f2f40;
+}
+
+.skin-name.common {
+    color: #777; /* grey */
+}
+
+.skin-name.rare {
+    color: #c62828; /* red */
+}
+
+.skin-name.legendary {
+    color: #f4c542; /* gold/yellow */
+}
+.rarity-title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #1f2f40;
+}
+
+.skin-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skin-grid .skin {
+    width: 140px;
+    text-align: center;
+}
+
+.skin-grid img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: white;
+    padding: 8px;
+    border: 1px solid #8cc6ff;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.skin-grid img.unlocked {
+    filter: none;
+    opacity: 1;
+}
+
+.skin-name.common {
+    color: #777;
+}
+
+.skin-name.rare {
+    color: #c62828;
+}
+
+.skin-name.legendary {
+    color: #f4c542;
+}
+
+.category-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-arrow {
+    transition: transform 0.2s ease;
+}
+
+.category.collapsed .toggle-arrow {
+    transform: rotate(-90deg);
+}
+
+.category.collapsed .skin-grid,
+.category.collapsed ul {
+    display: none;
+}
+
