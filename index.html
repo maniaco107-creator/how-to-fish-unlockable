@@ -6,83 +6,86 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* Même bleu que ton autre page */
-        body {
-            background-color: #4ac3ff;
-            font-family: 'Trebuchet MS', sans-serif;
-            color: white;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+    body {
+        background-color: #4ac3ff;
+        font-family: 'Trebuchet MS', sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
 
-        /* Bannière */
-        .banner {
-            width: 100%;
-            max-width: 900px;
-            display: block;
-            margin: 20px auto;
-            border-radius: 12px;
-            box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
-        }
+        /* Centrage global */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-        /* Roadmap */
-        .roadmap {
-            background: rgba(255,255,255,0.15);
-            width: 80%;
-            margin: 30px auto;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
-            text-align: left;
-        }
+    .banner {
+        width: 100%;
+        max-width: 900px;
+        margin: 20px auto;
+        border-radius: 12px;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
+    }
 
-        .roadmap h2 {
-            font-size: 32px;
-            margin-bottom: 10px;
-            text-align: center;
-            font-weight: 900;
-            letter-spacing: 2px;
-            text-shadow: 0px 0px 6px rgba(0,0,0,0.3);
-        }
+    .roadmap {
+        background: rgba(255,255,255,0.15);
+        width: 80%;
+        max-width: 700px;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
 
-        .roadmap ul {
-            list-style: none;
-            padding: 0;
-            font-size: 22px;
-        }
+        /* Centrer le contenu interne */
+        margin: 30px auto;
+        text-align: center;
+    }
 
-        .roadmap li {
-            margin: 12px 0;
-        }
+    .roadmap h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        text-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+    }
 
-        /* Style How To Fish */
-        .htf-text {
-            font-weight: 900;
-            letter-spacing: 1px;
-            text-shadow: 0px 0px 4px rgba(0,0,0,0.3);
-        }
+    .roadmap ul {
+        list-style: none;
+        padding: 0;
+        font-size: 22px;
+        margin: 0;
+    }
 
-        /* Bouton vers skins */
-        .btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 15px 30px;
-            background: #ffd34a;
-            color: black;
-            font-size: 22px;
-            font-weight: 900;
-            border-radius: 12px;
-            text-decoration: none;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
-            transition: 0.2s;
-        }
+    .roadmap li {
+        margin: 12px 0;
+    }
 
-        .btn:hover {
-            background: #ffea7a;
-            transform: scale(1.05);
-        }
-    </style>
+    .htf-text {
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 15px 30px;
+        background: #ffd34a;
+        color: black;
+        font-size: 22px;
+        font-weight: 900;
+        border-radius: 12px;
+        text-decoration: none;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+        transition: 0.2s;
+    }
+
+    .btn:hover {
+        background: #ffea7a;
+        transform: scale(1.05);
+    }
+</style>
+
 </head>
 
 <body>
