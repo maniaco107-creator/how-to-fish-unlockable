@@ -6,27 +6,33 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-    body {
-        background-color: #4ac3ff;
-        font-family: 'Trebuchet MS', sans-serif;
-        color: white;
-        margin: 0;
-        padding: 0;
+   body {
+    background-color: #4ac3ff;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
 
-        /* Centrage global */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+    /* Centrage global */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-    .banner {
-        width: 100%;
-        max-width: 900px;
-        margin: 20px auto;
-        border-radius: 12px;
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
-    }
+/* Bannière centrée */
+.banner {
+    display: block;
+    margin: 20px auto;
+
+    /* Empêche l'image de s'étirer trop */
+    max-width: 600px;
+    width: 100%;
+
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
+}
+
 
     .roadmap {
         background: rgba(255,255,255,0.15);
